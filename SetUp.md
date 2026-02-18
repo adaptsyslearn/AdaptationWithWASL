@@ -30,7 +30,7 @@ An user either needs *root* access (RECOMMENDED), or access to the binaries to r
 
 1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used. <br>
     Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware. <br>
-    E.g., `cmake -DENERGYMON_BUILD_DEFAULT=rapl` can be used for RAPL energy monitor.
+    E.g., `cmake -DENERGYMON_BUILD_DEFAULT=rapl` can be used for RAPL energy monitor. <br>
     For recent Linux kernels, *msr* kernel modules may need to be loaded with RAWIO permissions: <br>
     ```sudo modprobe msr``` <br>
     ```sudo setcap cap_sys_rawio=ep ./PATH/TO/BINARY``` <br>
