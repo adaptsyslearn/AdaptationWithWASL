@@ -23,7 +23,7 @@ Many Intel processors have *active* mode enabled by default for *intel_pstate* d
 For managing CPU frequencies in this work, *passive* mode is needed; *hardware managed P_State (HWP)* support has to be disabled. <br>
 ``` echo "passive" > /sys/devices/system/cpu/intel_pstate/status``` <br>
 
-Further information can be reference [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html). 
+Further information about CPU performance scaling driver can be referenced [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html). 
 
 The SetUp instructions are available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md). 
 
