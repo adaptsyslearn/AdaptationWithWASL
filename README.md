@@ -17,6 +17,8 @@ TailBench      : Updates to standard TailBench suite used for experiments
 Could VMs that are not bare-metal instances will not work for this system. <br> 
 Bare-metal hardware resources are needed for Energy Monitoring and Frequency Scaling.<br>
 
+### p_state drivers:
+
 Many Intel processors have *active* mode enabled by default for *intel_pstate* driver.<br> 
 For managing CPU frequencies in this work, hardware managed P_State support has to be disabled, enabling passive mode. <br>
 ``` echo "passive" > /sys/devices/system/cpu/intel_pstate/status``` <br>
