@@ -39,7 +39,7 @@ An user either needs *root* access (RECOMMENDED), or access to the binaries to r
 1. Download all the repositories provided in this project into your chosen location
 2. Update `Cargo.toml` files in `apto-tailbench-apps`, `apto` and `OptimizingController` accordingly.
 3. Compile tailbench applications using the instructions provided.
-4. **Update the location of the tailbench binaries in `apto-tailbench-apps/src/apps.rs` to reflect the correct file paths** (important).
+4. **Update the location of the tailbench binaries in `apto-tailbench-apps/src/apps.rs` to reflect the correct file paths** (IMPORTANT).
 5. Compile `apto-tailbench-apps` using `cargo build --release --bin main` inside `apto-tailbench-apps` directory.
 
 ## Profiling applications
