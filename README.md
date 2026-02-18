@@ -12,6 +12,11 @@ TailBench applications have been used for evaluation.
 Tailbench details are [here](https://github.com/adaptsyslearn/TailBenchMod).<br>
 TailBench      : Updates to standard TailBench suite used for experiments
 
+### Require Bare-Metal Instances:
+
+Could VMs that are not bare-metal will not work for this system. <br> 
+Bare-metal hardware resources are needed for Energy Monitoring and Frequency Scaling. 
+
 The SetUp instructions are available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md). 
 
 
