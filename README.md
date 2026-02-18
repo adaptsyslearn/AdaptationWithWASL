@@ -14,8 +14,13 @@ TailBench      : Updates to standard TailBench suite used for experiments
 
 ### Require Bare-Metal Instances:
 
-Could VMs that are not bare-metal will not work for this system. <br> 
-Bare-metal hardware resources are needed for Energy Monitoring and Frequency Scaling. 
+Could VMs that are not bare-metal instances will not work for this system. <br> 
+Bare-metal hardware resources are needed for Energy Monitoring and Frequency Scaling.<br>
+
+Many Intel processors have *active* mode enabled by default for *intel_pstate* driver.<br> 
+For managing CPU frequencies in this work, hardware managed P_State support has to be disabled, enabling passive mode. <br>
+``` echo "passive" > /sys/devices/system/cpu/intel_pstate/status```
+Further information can be reference [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html). 
 
 The SetUp instructions are available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md). 
 
