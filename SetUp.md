@@ -28,9 +28,11 @@ d. The `OptimizingController` (adaptation method) invokes WASL (`PoleAdaptation`
 An user either needs *root* access (RECOMMENDED), or access to the binaries to read energy consumption data of the system. <br> 
 (There could be issues without root access.)
 
-1. [Energymon](https://github.com/energymon/energymon): Install the implementation that is appropriate for your system.
-2. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
-3. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
+1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used.
+    Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware;
+    E.g., `cmake -DENERGYMON_BUILD_DEFAULT=rapl` can be used for RAPL energy monitor.   
+3. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
+4. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
    this repository and related tailBench inputs.
   
 
