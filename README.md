@@ -25,7 +25,7 @@ For managing CPU frequencies in this work, *passive* mode is needed; *hardware m
 
 Further information about CPU performance scaling driver can be referenced [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html). 
 
-The SetUp instructions are available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md). 
+Please review the setup instructions carefully that are available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md). 
 
 
 ### Code Structure
