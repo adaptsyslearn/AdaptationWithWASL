@@ -37,7 +37,7 @@ An user either needs *root* access (RECOMMENDED), or access to the binaries to r
     Please refer to [msr](https://github.com/energymon/energymon/tree/master/msr) for further information. 
 2. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
 3. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
-   this repository and related tailBench inputs. This has to be correctly installed for the executables to work. 
+   this repository and related tailBench inputs. This has to be correctly installed for the executables to work with our runtime system. 
   
 
 ## Setup
