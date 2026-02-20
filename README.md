@@ -14,7 +14,7 @@ TailBench      : Updates to standard TailBench suite used for experiments
 
 ### Require Bare-Metal Instances:
 
-Bare-metal hardware resources are needed for Energy Monitoring and Frequency Scaling for this system.<br>
+Bare-metal hardware resources are needed for Energy Monitoring and CPU Frequency Scaling for this system.<br>
 Could VMs are often not bare-metal instances; those will not work for this system. <br> 
 
 ### p_state drivers:
