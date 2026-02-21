@@ -62,7 +62,7 @@ The following paper can be cited:
 
 ## Updates and Fixes
 
-These changes/fixes are made based on reviewer-feedback.
+The following changes/fixes are made based on reviewer-feedback.
 1. Fixed version typo.
 1. Updated the documentation to build `energymon`
 2. Replaced hardcoded binary paths to environment variables
