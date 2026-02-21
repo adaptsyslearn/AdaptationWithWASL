@@ -418,7 +418,8 @@ impl FromStr for Application {
 }
 
 pub fn launch_xapian() -> Child {
-    Command::new("/home/vedant/wasl/tailbench/xapian/xapian_integrated")
+    let xapian_path = std::env::var("XAPIAN_PATH").expect("XAPIAN_PATH must be set to the xapian binary path.");
+    Command::new(&xapian_path)
         .envs(
             [
                 (
@@ -452,7 +453,8 @@ pub fn launch_xapian() -> Child {
 }
 
 pub fn launch_masstree() -> Child {
-    Command::new("/home/vedant/wasl/tailbench/masstree/mttest_integrated")
+    let masstree_path = std::env::var("MASSTREE_PATH").expect("MASSTREE_PATH must be set to the masstree binary path");
+    Command::new(&masstree_path)
         .envs(
             [
                 ("TBENCH_QPS", "5000"),
@@ -471,7 +473,8 @@ pub fn launch_masstree() -> Child {
 }
 
 pub fn launch_moses() -> Child {
-    Command::new("/home/vedant/wasl/tailbench/moses/bin/moses_integrated")
+    let moses_path = std::env::var("MOSES_PATH").expect("MOSES_PATH must be set to the moses binary path");
+    Command::new(&moses_path)
         .envs([
             ("TBENCH_QPS", "550"),
             ("TBENCH_MAXREQS", "7500000"),
@@ -499,7 +502,8 @@ pub fn launch_moses() -> Child {
 }
 
 pub fn launch_dnn() -> Child {
-    Command::new("/home/vedant/wasl/tailbench/img-dnn/img-dnn_integrated")
+    let dnn_path = std::env::var("DNN_PATH").expect("DNN_PATH must be set to the dnn binary path");
+    Command::new(dnn_path)
         .envs([
             ("TBENCH_WARMUPREQS", "0"),
             ("TBENCH_MAXREQS", "100000000"),
@@ -526,7 +530,8 @@ pub fn launch_dnn() -> Child {
 }
 
 pub fn launch_sphinx() -> Child {
-    Command::new("/home/vedant/wasl/tailbench/sphinx/decoder_integrated")
+    let sphinx_path = std::env::var("SPHINX_PATH").expect("SPHINX_PATH must be set to the sphinx (decoder) path");
+    Command::new(&sphinx_path)
         .envs([
             ("QUEUE_NAME", "/sphinx"),
             (
@@ -549,7 +554,8 @@ pub fn launch_sphinx() -> Child {
 }
 
 pub fn launch_silo() -> Child {
-    Command::new("/home/cc/wasl/wasl-tailbench/silo/out-perf.masstree/benchmarks/dbtest_integrated")
+    let silo_path = std::env::var("SILO_PATH").expect("SILO_PATH must be set to silo binary path");
+    Command::new(&silo_path)
         .envs([
             ("QUEUE_NAME", "/silo"),
             ("TBENCH_QPS", "4000"),
