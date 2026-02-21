@@ -16,10 +16,10 @@ Algo.1 (in the paper) involves 1, 2, and 3 above.
 
 Interactions between the modules:
 
-a. Applications connect to `apto-tailbench-apps` using a linux message queue to report performance information.
-b. `apto-tailbench-apps` sets up `apto` with a specific local adaptation method and an application goal.
-`apto-tailbench-apps` communicates the information it receives from the (tailbench) applications to `apto`.
-c. `apto` uses this information along with the `OptimizingController` for resource adjustments to achieve an application's goals.
+a. Applications connect to `apto-tailbench-apps` using a linux message queue to report performance information. <br>
+b. `apto-tailbench-apps` sets up `apto` with a specific local adaptation method and an application goal. <br>
+`apto-tailbench-apps` communicates the information it receives from the (tailbench) applications to `apto`. <br>
+c. `apto` uses this information along with the `OptimizingController` for resource adjustments to achieve an application's goals. <br>
 d. The `OptimizingController` (adaptation method) invokes WASL (`PoleAdaptation`) as and when needed to address multi-tenant (global) interference.
 
 ## Prerequisites
@@ -35,17 +35,17 @@ Furthermore, depending on the users' preferences and knobs used by the users the
 Therefore, running these experiments requires permission to manage all of the aforementioned quantities. Therefore, it is recommended to run these experiments on
 a bare-metal machine and adjust the underlying drivers accordingly.
 
-1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used.
-    Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware.
+1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used. <br>
+    Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware. <br>
     As an example, `cmake -DENERGYMON_BUILD_DEFAULT=rapl` can be used for RAPL energy monitor.
     For recent Linux kernels, *msr* kernel modules *may* need to be loaded with RAWIO permissions:
-    ```sudo modprobe msr```
-    ```sudo setcap cap_sys_rawio=ep ./PATH/TO/BINARY```
+    ```sudo modprobe msr``` <br>
+    ```sudo setcap cap_sys_rawio=ep ./PATH/TO/BINARY``` <br>
     Please refer to [msr](https://github.com/energymon/energymon/tree/master/msr) for further information.
-    These instructions only apply to modern Intel processors.
+    These instructions only apply to modern Intel processors. <br>
     As a rule of thumb, users need to determine the appropriate energymon implementation for their platform.
-2. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
-3. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
+3. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
+4. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
    this repository and related tailBench inputs. This has to be correctly installed for the executables to work with our runtime system.
 
 
