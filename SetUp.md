@@ -38,7 +38,7 @@ a bare-metal machine and adjust the underlying drivers accordingly.
 1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used. <br>
     Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware. <br>
     As an example, `cmake -DENERGYMON_BUILD_DEFAULT=rapl` can be used for RAPL energy monitor.
-    For recent Linux kernels, *msr* kernel modules *may* need to be loaded with RAWIO permissions:
+    For recent Linux kernels, *msr* kernel modules *may* need to be loaded with RAWIO permissions: <br>
     ```sudo modprobe msr``` <br>
     ```sudo setcap cap_sys_rawio=ep ./PATH/TO/BINARY``` <br>
     Please refer to [msr](https://github.com/energymon/energymon/tree/master/msr) for further information.
