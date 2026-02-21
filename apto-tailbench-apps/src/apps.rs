@@ -424,7 +424,7 @@ pub fn launch_xapian() -> Child {
             [
                 (
                     "LD_LIBRARY_PATH",
-                    "/home/vedant/wasl/tailbench/xapian/xapian-core-1.2.13/install/lib/",
+                    "/home/cc/wasl/wasl-tailbench/xapian/xapian-core-1.2.13/install/lib/",
                 ),
                 ("TBENCH_QPS", "500"),
                 ("TBENCH_MAXREQS", "50000000"),
@@ -432,7 +432,7 @@ pub fn launch_xapian() -> Child {
                 ("TBENCH_MINSLEEPNS", "100000"),
                 (
                     "TBENCH_TERMS_FILE",
-                    "/home/vedant/wasl/tailbench/tailbench.inputs/xapian/terms.in",
+                    "/home/cc/wasl/tailbench.inputs/xapian/terms.in",
                 ),
                 ("QUEUE_NAME", "/xapian"),
             ]
@@ -442,12 +442,12 @@ pub fn launch_xapian() -> Child {
             "-n",
             "16",
             "-d",
-            "/home/vedant/wasl/tailbench/tailbench.inputs/xapian/wiki",
+            "/home/cc/wasl/tailbench.inputs/xapian/wiki",
             "-r",
             "1000000000",
         ])
         .stdout(std::process::Stdio::null())
-        .current_dir("/home/vedant/wasl/tailbench/xapian")
+        .current_dir("/home/cc/wasl/wasl-tailbench/xapian")
         .spawn()
         .unwrap()
 }
@@ -467,7 +467,7 @@ pub fn launch_masstree() -> Child {
         )
         .args(["-j", "8", "mycsba", "masstree"])
         .stdout(std::process::Stdio::null())
-        .current_dir("/home/vedant/wasl/tailbench/masstree")
+        .current_dir("/home/cc/wasl/wasl-tailbench/masstree")
         .spawn()
         .unwrap()
 }
@@ -486,7 +486,7 @@ pub fn launch_moses() -> Child {
             "-config",
             "./moses.ini",
             "-input-file",
-            "/home/vedant/wasl/tailbench/tailbench.inputs/moses/testTerms",
+            "/home/cc/wasl/tailbench.inputs/moses/testTerms",
             "-threads",
             "16",
             "-num-tasks",
@@ -496,7 +496,7 @@ pub fn launch_moses() -> Child {
         ])
         .stdout(std::process::Stdio::null())
         .stderr(std::process::Stdio::null())
-        .current_dir("/home/vedant/wasl/tailbench/moses")
+        .current_dir("/home/cc/wasl/wasl-tailbench/moses")
         .spawn()
         .unwrap()
 }
@@ -511,7 +511,7 @@ pub fn launch_dnn() -> Child {
             ("TBENCH_MINSLEEPNS", "10000"),
             (
                 "TBENCH_MNIST_DIR",
-                "/home/vedant/wasl/tailbench/tailbench.inputs/img-dnn/mnist",
+                "/home/cc/wasl/tailbench.inputs/img-dnn/mnist",
             ),
             ("QUEUE_NAME", "/dnn"),
         ])
@@ -519,7 +519,7 @@ pub fn launch_dnn() -> Child {
             "-r",
             "16",
             "-f",
-            "/home/vedant/wasl/tailbench/tailbench.inputs/img-dnn/models/model.xml",
+            "/home/cc/wasl/tailbench.inputs/img-dnn/models/model.xml",
             "-n",
             "100000000",
         ])
@@ -536,19 +536,19 @@ pub fn launch_sphinx() -> Child {
             ("QUEUE_NAME", "/sphinx"),
             (
                 "LD_LIBRARY_PATH",
-                "/home/vedant/wasl/tailbench/sphinx/sphinx-install/lib",
+                "/home/cc/wasl/wasl-tailbench/sphinx/sphinx-install/lib",
             ),
             ("TBENCH_QPS", "1.0"),
             ("TBENCH_MAXREQS", "100000000000000000000000000000"),
             ("TBENCH_WARNUPREQS", "0"),
             ("TBENCH_MINSLEEPNS", "10000"),
-            ("TBENCH_AN4_CORPUS", "/home/vedant/wasl/tailbench/tailbench.inputs/sphinx"),
+            ("TBENCH_AN4_CORPUS", "/home/cc/wasl/tailbench.inputs/sphinx"),
             ("TBENCH_AUDIO_SAMPLES", "audio_samples"),
         ])
         .args(["-t", "16"])
         .stdout(std::process::Stdio::null())
         .stderr(std::process::Stdio::null())
-        .current_dir("/home/vedant/wasl/tailbench/sphinx")
+        .current_dir("/home/cc/wasl/wasl-tailbench/sphinx")
         .spawn()
         .unwrap()
 }
