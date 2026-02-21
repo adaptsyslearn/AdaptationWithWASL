@@ -54,7 +54,7 @@ a bare-metal machine and adjust the underlying drivers accordingly.
 1. Download all the repositories provided in this project into your chosen location
 2. Update `Cargo.toml` files in `apto-tailbench-apps`, `apto` and `OptimizingController` accordingly.
 3. Compile tailbench applications using the instructions provided.
-4. Update the location of the tailbench binaries in `apto-tailbench-apps/src/apps.rs` to reflect related file paths.
+4. Update the location of the tailbench binaries in `apto-tailbench-apps/src/apps.rs` to reflect related file paths. (IMPORTANT)
 5. Compile `apto-tailbench-apps` using `cargo build --release --bin main` inside `apto-tailbench-apps` directory.
 
 ## Profiling applications
