@@ -1,6 +1,6 @@
 # Multi-module Adaptation With WASL
 
-This repo contains source code and other artifacts related to the paper 
+This repo contains source code and other artifacts related to the paper
 *WASL: Harmonizing Uncoordinated Adaptive Modules in Multi-Tenant Cloud Systems*.
 WASL is a rate-adaptation based technique for runtime cross-layer coordination
 in multi-tenant clouds to mitigate performance interference arising due to
@@ -15,17 +15,17 @@ TailBench      : Updates to standard TailBench suite used for experiments
 ### Require Bare-Metal Instances:
 
 Bare-metal hardware resources are needed for Energy Monitoring and CPU Frequency Scaling for this system.<br>
-Could VMs are often not bare-metal instances; those will not work for this system. <br> 
+Could VMs are often not bare-metal instances; those will not work for this system. <br>
 
 ### p_state drivers:
 
-Many Intel processors have *active* mode enabled by default for *intel_pstate* driver.<br> 
+Many Intel processors have *active* mode enabled by default for *intel_pstate* driver.<br>
 For managing CPU frequencies in this work, *passive* mode is needed; *hardware managed P_State (HWP)* support has to be disabled. <br>
 ``` echo "passive" > /sys/devices/system/cpu/intel_pstate/status``` <br>
 
-Further information about CPU performance scaling driver can be referenced [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html). 
+Further information about CPU performance scaling driver can be referenced [here](https://www.kernel.org/doc/html/v5.3/admin-guide/pm/intel_pstate.html).
 
-Please review the setup instructions available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md) *carefully*. 
+Please review the setup instructions available [here](https://github.com/adaptsyslearn/AdaptationWithWASL/blob/main/SetUp.md) *carefully*.
 
 
 ### Code Structure
@@ -58,3 +58,15 @@ The following paper can be cited:
   year         = {2026}
 }
 ```
+
+## Updates and Fixes
+
+There have been a number updates and fixes based on feedback from artifact reviewers.
+1. Fixed version typo.
+1. Updated the documentation to build `energymon`
+2. Replaced hardcoded binary paths to environment variables
+3. Updated log file creation to overwrite existing files
+4. Fixed window-wide energy and power logging
+5. Added initial scripts for automated deployment.
+
+These changes were made based on the reviews received for this artifact and changes were often directly taken from the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git)
