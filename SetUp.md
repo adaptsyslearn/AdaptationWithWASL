@@ -58,11 +58,14 @@ Once this table is formed based on the available system resources, an applicatio
 ```
 cd ./apto-tailbench-apps
 $ cargo build --release --bin main
-$ sudo RUST_LOG=info PROFILE=1000 <APPLICATION-NAME>_PATH=<APPLICATION_BINARY_PATH> ./target/release/main --warmup-time <WARMUP-SECONDS> profile <APPLICATION-NAME>
+$ sudo RUST_LOG=info PROFILE=<NUMBER-OF-ITERATIONS> <APPLICATION-NAME>_PATH=<APPLICATION_BINARY_PATH> ./target/release/main --warmup-time <WARMUP-SECONDS> profile <APPLICATION-NAME>
 ```
 
 This command outputs a file named `measuretable`.
 It is recommended that the `knobtable` (kt) and `measuretable` (mt) be renamed to `<APPLICATION-NAME>.kt` and `<APPLICATION-NAME>.mt`, respectively. <br>
+
+Please note that profile are hardware dependant. Therefore, users must profile each application independently before using the system.
+The higher the number of iterations, the better the profile as it will allow the profiler to capture the dynamics of the application and the underlying system more accurately.
 
 
 ## Running Adaptation-related Experiments
