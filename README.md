@@ -62,7 +62,7 @@ The following paper can be cited:
 
 ## Updates and Fixes
 
-There have been a number updates and fixes based on feedback from artifact reviewers.
+These changes/fixes are made based on reviewer-feedback.
 1. Fixed version typo.
 1. Updated the documentation to build `energymon`
 2. Replaced hardcoded binary paths to environment variables
@@ -70,4 +70,4 @@ There have been a number updates and fixes based on feedback from artifact revie
 4. Fixed window-wide energy and power logging
 5. Added initial scripts for automated deployment.
 
-These changes were made based on the reviews received for this artifact and changes were often directly taken from the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git)
+For 3 to 5, the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) is referenced for making the updates.
