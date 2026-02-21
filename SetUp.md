@@ -58,11 +58,11 @@ a bare-metal machine and adjust the underlying drivers accordingly.
 
 ## Profiling applications
 
-`apto` needs a `measuretable` for an application to adapt to an application's goals.
-`apto-tailbench-apps` can be used to obtain the `measuretable` (as in Table. 2 in the paper) after formulating a suitable `knobtable`.
+`apto` needs a `measuretable` for an application to adapt to an application's goals. <br>
+`apto-tailbench-apps` can be used to obtain the `measuretable` (as in Table. 2 in the paper) after formulating a suitable `knobtable`. <br>
 
-A `knobtable` is an enumeration of valid configurations (as in Table.3 in the paper) that `apto` can use.
-A sample `knobtable` for an application can be found in [./apto-tailbench-apps/knobtable](./apto-tailbench-apps/knobtable).
+A `knobtable` is an enumeration of valid configurations (as in Table.3 in the paper) that `apto` can use. <br>
+A sample `knobtable` for an application can be found in [./apto-tailbench-apps/knobtable](./apto-tailbench-apps/knobtable). <br>
 Once this table is formed based on the available system resources, an application can be profiled as follows:
 
 ```
