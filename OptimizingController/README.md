@@ -7,4 +7,4 @@ PI- and RL-module: [./src/controller/optimizing_controller.rs](./src/controller/
 
 Adaptive control (AC)-module: [./src/controller/xup_state.rs](./src/controller/xup_state.rs) and [./src/kalman_filter.rs](./src/kalman_filter.rs). <br>
 
-These adaptation modules perform regular local adaptation at the application- or system-level, slowing down/speeding up, as needed.
+These adaptation modules perform regular local adaptation at the application- or system-level, as needed.
