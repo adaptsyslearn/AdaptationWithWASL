@@ -64,10 +64,10 @@ The following paper can be cited:
 
 The following changes/fixes are made based on reviewer-feedback.
 1. Fixed version typo.
-1. Updated the documentation to build `energymon`
-2. Replaced hardcoded binary paths to environment variables
-3. Updated log file creation to overwrite existing files
-4. Fixed window-wide energy and power logging
-5. Added initial scripts for automated deployment.
+2. Updated the documentation to build `energymon`
+3. Replaced hardcoded binary paths to environment variables
+4. Updated log file creation to overwrite existing files
+5. Fixed window-wide energy and power logging
+6. Added initial scripts for automated deployment.
 
-For 3 to 5, the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) has been referenced for making the updates.
+The [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) has been referenced for making some of these updates.
