@@ -759,7 +759,7 @@ impl Apto {
         let mut write = |name, value: f64| {
             let writer = self.outfiles.entry(name).or_insert_with(|| {
                 let newfile = OpenOptions::new()
-                    .create_new(true)
+                    .create(true)
                     .write(true)
                     .open(format!("{}.{}", name, self.configurations.instance_id))
                     .unwrap();
