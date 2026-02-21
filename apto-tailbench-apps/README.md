@@ -4,7 +4,7 @@ A wrapper around Tailbench applications that utilizes the overall runtime system
 
 For any other application or benchmark suite, this layer needs to be updated accordingly.  
 
-The wrapper sets up adaptation using **apto** (i.e., processing/activation layer) for the application and the system. 
+The wrapper sets up adaptation using *apto* (i.e., the processing/activation layer) for the application and the system. 
 The wrapper then launches the application and the system module. <br>
 
 After every iteration, the module 
@@ -13,4 +13,4 @@ reads the start and end timestamps of a served request from the tailbench applic
 Compute latency is calculated using these timestamps and passed to the processing/activation layer, 
 that then proceeds with adaptation.
 
-The implementation of *Monolithic* Adaptation can be found in *.src/apps.rs*.
+The implementation of *Monolithic* (centralized) Adaptation can be found in *.src/apps.rs*.
