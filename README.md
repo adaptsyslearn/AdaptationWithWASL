@@ -70,4 +70,4 @@ The following changes/fixes are made based on reviewer-feedback.
 4. Fixed window-wide energy and power logging
 5. Added initial scripts for automated deployment.
 
-For 3 to 5, the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) is referenced for making the updates.
+For 3 to 5, the [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) has been referenced for making the updates.
