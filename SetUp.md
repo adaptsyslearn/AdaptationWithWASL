@@ -74,8 +74,9 @@ $ sudo RUST_LOG=info PROFILE=<NUMBER-OF-ITERATIONS> <APPLICATION-NAME>_PATH=<APP
 This command outputs a file named `measuretable`.
 It is recommended that the `knobtable` (kt) and `measuretable` (mt) be renamed to `<APPLICATION-NAME>.kt` and `<APPLICATION-NAME>.mt`, respectively.
 
-Please note that profile are hardware dependant. Therefore, users must profile each application independently before using the system.
-The higher the number of iterations, the better the profile as it will allow the profiler to capture the dynamics of the application and the underlying system more accurately.
+Please note that an application profile is hardware-dependant. 
+Therefore, users must profile each application independently before using the system.
+The higher the number of iterations, the better the profile, as it will allow the profiler to capture the dynamics of the application and the underlying system more accurately.
 
 
 ## Running Adaptation-related Experiments
