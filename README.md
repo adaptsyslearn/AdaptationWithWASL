@@ -39,6 +39,7 @@ Please review the setup instructions available [here](https://github.com/adaptsy
 |-- PoleAdaptation          : WASL-based Multi-Module Adaptation (global)
 |-- SetUp.md                : Readme about the setup of the overall system
 |-- Plots                   : Scripts related to some results
+|-- Infra                   : Experimented Set-up on an AWS instance
 ```
 
 Each folder has its own *Readme* file.
