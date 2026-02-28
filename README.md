@@ -68,5 +68,3 @@ The following updates and fixes have been made based on reviewer-feedback.
 4. Updated log file creation to overwrite existing files
 5. Fixed window-wide energy and power logging
 6. Added initial scripts for automated deployment.
-
-The [reviewer's fork](https://github.com/murraystokely/AdaptationWithWASL.git) has been referenced for making some of these updates.
