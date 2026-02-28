@@ -122,7 +122,6 @@ On the **instance**:
 cd /opt/wasl/AdaptationWithWASL/apto-tailbench-apps/src
 
 # Replace the original author's paths with the bare-metal install paths
-sed -i 's|/home/vedant/wasl/tailbench|/opt/wasl/tailbench|g' apps.rs
 sed -i 's|/home/cc/wasl/wasl-tailbench|/opt/wasl/tailbench|g' apps.rs
 
 # Rebuild after path changes
