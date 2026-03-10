@@ -10,7 +10,6 @@ set size 1.2, 0.8
 
 set key top horizontal samplen 2.5
 
-#set data style boxes
 set boxwidth 0.20
 
 set style line 1 lc rgb 'red30' lt 1 lw 2
@@ -20,7 +19,7 @@ set style line 3 lc rgb 'blue50' lt 1 lw 2
 set xtics rotate 60
 set ylabel "detour (Normalized)" offset 1.5
 set xlabel "Statistical Estimators" offset 0.5, 0.5
-#set xrange [0:12]
+
 set yrange [-0.15:2.25]
 
 set autoscale xfix
