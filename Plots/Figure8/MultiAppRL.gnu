@@ -12,7 +12,7 @@ set rmargin 1
 
 set key top left horizontal samplen 2.5
 
-#set data style boxes
+
 set boxwidth 0.15 relative
 
 set style line 1 lc rgb 'red30' lt 1 lw 2
@@ -23,7 +23,7 @@ set xtics rotate by 15 font ", 25"
 set xtics offset -9, -1.3
 set ylabel 'N-P95 Tail Latency' 
 set xlabel "Multiple Applications (RL Module)" offset 0.5, -1
-#set yrange [-0.15:3]
+
 
 set autoscale xfix
 
