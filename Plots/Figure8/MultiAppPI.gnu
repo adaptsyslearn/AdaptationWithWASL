@@ -39,7 +39,7 @@ plot \
         ''     u ($0+0.3):($4/$4) w boxes ls 1 fs pattern 1 notitle " "
      
 
-#Normalized by column $3 and $5, $3 & 5 - WASL, $2 and 4: Uncoordinated 
+#Normalized by column $2 and $4, $3 & 5 - Uncoordinated, $2 and 4: WASL  
 
 
 
