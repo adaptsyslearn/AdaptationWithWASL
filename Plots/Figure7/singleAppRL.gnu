@@ -11,7 +11,7 @@ set rmargin 1
 
 set key top right samplen 2.5
 
-#set data style boxes
+
 set boxwidth 0.20
 
 set style line 1 lc rgb 'red30' lt 1 lw 2
@@ -24,7 +24,6 @@ set ylabel "N-P95 Tail Latency" offset 1.5
 set xlabel "Applications (RL Module)" offset 0.5, -1
 set yrange [-0.15:3]
 
-#set autoscale xfix
 
 set offset 0.5, 0.5
 
@@ -36,7 +35,6 @@ plot 'singleApp.csv' u ($0-0.2):($6/$5) w boxes ls 2 fs pattern 4 title "Uncoord
          ''     u ($0+0.2):($5/$5) w boxes ls 8 fs pattern 2 title "Monolithic" 
       
 
-#Normalized by $5
 
 
 
