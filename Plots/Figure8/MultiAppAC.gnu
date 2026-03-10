@@ -12,7 +12,7 @@ set rmargin 1
 
 set key top right horizontal samplen 2.5
 
-#set data style boxes
+
 set boxwidth 0.15 relative
 
 set style line 1 lc rgb 'red30' lt 1 lw 2
