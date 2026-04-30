@@ -26,14 +26,13 @@ d. The `OptimizingController` (adaptation method) invokes WASL (`PoleAdaptation`
 
 An user either needs *root* access (RECOMMENDED), or access to the binaries to read energy consumption data of the system.
 
-Furthermore, depending on the users' preferences and knobs used by the users the applications and the underlying system modules need to be able to:
+Furthermore, depending on a user's preferences (goals/configurations), the applications and the underlying system modules need to be able to:
 1. Toggle hyperthreading
 2. Task affinity
 3. Core Frequency (requires `scaling_governor` to be `userspace`)
 4. Uncore Frequency
 
-Therefore, running these experiments requires permission to manage all of the aforementioned quantities. Therefore, it is recommended to run these experiments on
-a bare-metal machine and adjust the underlying drivers accordingly.
+Running experiments requires permission to manage all of the aforementioned quantities. Therefore, it is recommended to run experiments on a bare-metal machine and adjust the underlying drivers accordingly.
 
 1. [Energymon](https://github.com/energymon/energymon): Install energy monitoring module with a suitable flag that is appropriate for the hardware being used. <br>
     Note that default installation provides dummy values that will not sense energy values for the underlying CPU hardware. <br>
@@ -43,7 +42,7 @@ a bare-metal machine and adjust the underlying drivers accordingly.
     ```sudo setcap cap_sys_rawio=ep ./PATH/TO/BINARY``` <br>
     Please refer to [msr](https://github.com/energymon/energymon/tree/master/msr) for further information.
     These instructions only apply to modern Intel processors. <br>
-    As a rule of thumb, users need to determine the appropriate energymon implementation for their platform.
+    As a rule of thumb, users need to determine the appropriate ```energymon``` implementation for their platform.
 3. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
 4. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
    this repository and related tailBench inputs. This has to be correctly installed for the executables to function with our runtime system.
