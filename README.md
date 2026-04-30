@@ -10,7 +10,7 @@ DOI Reference: [Zenodo](https://doi.org/10.5281/zenodo.18415164)
 
 TailBench applications have been used for evaluation.
 Tailbench details are [here](https://github.com/adaptsyslearn/TailBenchMod).<br>
-TailBench      : Updates to standard TailBench suite used for experiments
+TailBenchMod     : Updates to standard TailBench suite used for experiments
 
 ### Require Bare-Metal Instances:
 
