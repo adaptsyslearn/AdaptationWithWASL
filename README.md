@@ -58,13 +58,3 @@ The following paper can be cited:
   year         = {2026}
 }
 ```
-
-## Updates and Fixes
-
-The following updates and fixes have been made based on reviewer-feedback.
-1. Fixed version typo.
-2. Updated the documentation to build `energymon`
-3. Replaced hardcoded binary paths to environment variables
-4. Updated log file creation to overwrite existing files
-5. Fixed window-wide energy and power logging
-6. Added initial scripts for automated deployment.
