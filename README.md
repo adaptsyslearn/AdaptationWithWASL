@@ -36,7 +36,7 @@ Please review the setup instructions available [here](https://github.com/adaptsy
 |-- apto                    : Processing and Activation,
                               coordination with the Adaptation Module
 |-- OptimizingController    : Adaptation Module (local)
-|-- PoleAdaptation          : WASL-based Multi-Module Adaptation (global)
+|-- PoleAdaptation          : WASL (Multi-Module Adaptation Technique) (global)
 |-- Plots                   : Scripts related to some results
 |-- Infra                   : Experimented Set-up on an AWS instance
 ```
