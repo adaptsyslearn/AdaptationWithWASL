@@ -1,6 +1,6 @@
 # Apto
 
-Apto is a Rust implementation of the **GOAL**[[1](#goal)] paper.
+Apto is a Rust implementation of the **GOAL** [[1](#goal)] paper.
 
 GOAL is a framework for general and dynamic adaptation. <br>
 Conceptually, *Apto* is the *processing and activation layer* as in Figure.5 (of the paper) 
