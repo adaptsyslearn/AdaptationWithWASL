@@ -44,8 +44,7 @@ Running experiments requires permission to manage all of the aforementioned quan
     These instructions only apply to modern Intel processors. <br>
     As a rule of thumb, users need to determine the appropriate ```energymon``` implementation for their platform.
 3. [Rust](https://rust-lang.org/tools/install/): Use standard configuration that allow using `cargo`.
-4. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) provided with
-   this repository and related tailBench inputs. This has to be correctly installed for the executables to function with our runtime system.
+4. A [modified version](https://github.com/adaptsyslearn/TailBenchMod) of [TailBench](https://tailbench.csail.mit.edu/) has been provided in this repository with related tailBench inputs. This has to be correctly installed for the executables to function with our runtime system.
 
 
 ## Setup
